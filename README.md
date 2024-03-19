@@ -1,0 +1,5 @@
+- A programm with four classes
+- the purpose is to list Bank transactions from reading textfile
+- using the localhost 8080 you can access the list
+- to see the details of each transaction click on the id
+- to go back to the list click back at the end of the opened transaction
