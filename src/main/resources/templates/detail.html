@@ -16,7 +16,13 @@
     </div>
 
     <div>
-        Amount: <td th:text="${transaction.amount}"></td>
+
+        Amount:
+        <td th:switch="${transaction.type}">
+            <span th:case="'C'" th:text=" -${transaction.amount}"></span>
+            <span th:case="'D'" th:text="${transaction.amount}"></span>
+        </td>
+
     </div>
 
     <div>
